@@ -19,17 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd404e73-8dcf-425d-9d73-bfcef433cc94" name="Default Changelist" comment="">
+    <list default="true" id="dd404e73-8dcf-425d-9d73-bfcef433cc94" name="Default Changelist" comment="sucesso, migrations working and images aswell">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_authors_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_authors_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_book-authors_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_book_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_book_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/1087815.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/bookslogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -191,8 +188,16 @@
       <updated>1607435509977</updated>
       <workItem from="1607435512060" duration="14728000" />
       <workItem from="1608042668213" duration="66000" />
-      <workItem from="1608042752934" duration="2547000" />
+      <workItem from="1608042752934" duration="10431000" />
     </task>
+    <task id="LOCAL-00001" summary="sucesso, migrations working and images aswell">
+      <created>1608045539684</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608045539684</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,14 +214,23 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="sucesso, migrations working and images aswell" />
+    <option name="LAST_COMMIT_MESSAGE" value="sucesso, migrations working and images aswell" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="474" y="218" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607452744023">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="474" y="218" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607452744023" />
-    <state x="716" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607441312186">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2636" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608046670807">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="2636" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608046670807" />
     <state x="716" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607441312186" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608045544872">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608045544872" />
   </component>
 </project>

@@ -23,8 +23,8 @@
     <div class="row">
         <div class="col co-12">
             <!-- Default form register -->
-            <form class="text-center border border-light p-5" action="#!">
-
+            <form class="text-center border border-light p-5" action="{{ route('registerUser') }}" method="post">
+                @csrf
                 <img src="{{ url('storage/images/bookslogo.png') }}" alt="" height="200" width="200">
 
                 <p class="h4 mb-4">Sign up</p>
@@ -32,19 +32,19 @@
                 <div class="form-row mb-4">
                     <div class="col">
                         <!-- First name -->
-                        <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+                        <input type="text" name="firstName" class="form-control" placeholder="First name">
                     </div>
                     <div class="col">
                         <!-- Last name -->
-                        <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+                        <input type="text" name="lastName" class="form-control" placeholder="Last name">
                     </div>
                 </div>
 
                 <!-- E-mail -->
-                <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+                <input type="email" name="email" class="form-control mb-4" placeholder="E-mail">
 
                 <!-- Password -->
-                <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                <input type="password" name="password" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
                 <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
                     At least 8 characters and 1 digit
                 </small>
@@ -57,7 +57,7 @@
 
 
 
-                    <a href="{{Route("login")}}">Already have an account? Login.</a>
+                    <a href="{{route("login")}}">Already have an account? Login.</a>
 
 
             </form>
@@ -86,3 +86,6 @@
         align-items: center;
     }
 </style>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

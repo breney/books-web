@@ -22,17 +22,18 @@
 <div class="container">
     <div class="row">
         <div class="col co-12">
-            <form class="text-center border border-light p-5" action="#!">
+            <form class="text-center border border-light p-5" action="{{ route('checkLogin') }}" method="post">
+                @csrf
 
                 <img src="{{ url('storage/images/bookslogo.png') }}" alt="" height="200" width="200">
 
                 <p class="h4 mb-4">Log in</p>
 
                 <!-- Email -->
-                <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+                <input type="email" name="email" class="form-control mb-4" placeholder="E-mail">
 
                 <!-- Password -->
-                <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+                <input type="password" name="password" class="form-control mb-4" placeholder="Password">
 
                 <div class="d-flex justify-content-around">
                     <div>
@@ -41,6 +42,7 @@
                             <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
                             <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
                         </div>
+
                     </div>
                 </div>
 
@@ -53,6 +55,20 @@
                 </p>
 
             </form>
+
+               @if(session()->has('error'))
+                <div class="alert alert-danger">
+                    <button type="button" class="close" data-dismiss="alert">x</button>
+                    {{ session()->has('error') }}
+                </div>
+
+            @endif
+
+
+
+
+
+
         </div>
     </div>
 </div>
@@ -78,3 +94,7 @@
         align-items: center;
     }
 </style>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
