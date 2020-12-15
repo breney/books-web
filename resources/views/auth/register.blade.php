@@ -25,6 +25,8 @@
             <!-- Default form register -->
             <form class="text-center border border-light p-5" action="#!">
 
+                <img src="{{ url('storage/images/bookslogo.png') }}" alt="" height="200" width="200">
+
                 <p class="h4 mb-4">Sign up</p>
 
                 <div class="form-row mb-4">
@@ -47,19 +49,16 @@
                     At least 8 characters and 1 digit
                 </small>
 
-                <!-- Newsletter -->
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
-                    <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our newsletter</label>
-                </div>
+
 
                 <!-- Sign up button -->
                 <button class="btn btn-info my-4 btn-block" type="submit">Sign up</button>
 
-                <!-- Terms of service -->
-                <p>By clicking
-                    <em>Sign up</em> you agree to our
-                    <a href="" target="_blank">terms of service</a>
+
+
+
+                    <a href="{{Route("login")}}">Already have an account? Login.</a>
+
 
             </form>
         </div>

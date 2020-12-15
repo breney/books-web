@@ -24,6 +24,8 @@
         <div class="col co-12">
             <form class="text-center border border-light p-5" action="#!">
 
+                <img src="{{ url('storage/images/bookslogo.png') }}" alt="" height="200" width="200">
+
                 <p class="h4 mb-4">Log in</p>
 
                 <!-- Email -->
@@ -46,8 +48,8 @@
                 <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
 
                 <!-- Register -->
-                <p>Not a member?
-                    <a href="/register">Register</a>
+                <p>
+                    <a href="{{ route("register")  }}"> Not a member? Register</a>
                 </p>
 
             </form>

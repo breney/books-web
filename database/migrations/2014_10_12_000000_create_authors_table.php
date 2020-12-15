@@ -17,6 +17,7 @@ class CreateAuthorsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('age');
+            $table->string('nationality');
             $table->string('country');
         });
     }
