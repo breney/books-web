@@ -19,15 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd404e73-8dcf-425d-9d73-bfcef433cc94" name="Default Changelist" comment="sucesso, migrations working and images aswell">
+    <list default="true" id="dd404e73-8dcf-425d-9d73-bfcef433cc94" name="Default Changelist" comment="login and register working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,13 +157,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\laravel-project\storage\app\public" />
-      <recent name="C:\xampp\htdocs\laravel-project\storage\app" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\laravel-project" />
       <recent name="C:\Users\Bruno\Desktop\laravel-project\database\migrations" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\laravel-project\public" />
+      <recent name="C:\xampp\htdocs\laravel-project\public\storage\images" />
+      <recent name="C:\xampp\htdocs\laravel-project\public\storage" />
+      <recent name="C:\xampp\htdocs\laravel-project\storage\app\public" />
+      <recent name="C:\xampp\htdocs\laravel-project\storage\app" />
     </key>
   </component>
   <component name="RunManager">
@@ -188,7 +185,8 @@
       <updated>1607435509977</updated>
       <workItem from="1607435512060" duration="14728000" />
       <workItem from="1608042668213" duration="66000" />
-      <workItem from="1608042752934" duration="10431000" />
+      <workItem from="1608042752934" duration="10779000" />
+      <workItem from="1608225731656" duration="692000" />
     </task>
     <task id="LOCAL-00001" summary="sucesso, migrations working and images aswell">
       <created>1608045539684</created>
@@ -197,7 +195,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608045539684</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="login and register working">
+      <created>1608055032773</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608055032773</updated>
+    </task>
+    <task id="LOCAL-00003" summary="login and register working">
+      <created>1608055046857</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608055046857</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,10 +225,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="sucesso, migrations working and images aswell" />
-    <option name="LAST_COMMIT_MESSAGE" value="sucesso, migrations working and images aswell" />
+    <MESSAGE value="login and register working" />
+    <option name="LAST_COMMIT_MESSAGE" value="login and register working" />
   </component>
   <component name="WindowStateProjectService">
     <state x="474" y="218" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607452744023">
@@ -228,9 +242,9 @@
     </state>
     <state x="2636" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608046670807" />
     <state x="716" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607441312186" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608045544872">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608055052043">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608045544872" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608055052043" />
   </component>
 </project>

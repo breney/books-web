@@ -25,7 +25,7 @@
             <form class="text-center border border-light p-5" action="{{ route('checkLogin') }}" method="post">
                 @csrf
 
-                <img src="{{ url('storage/images/bookslogo.png') }}" alt="" height="200" width="200">
+                <img src="{{ asset('images/bookslogo.png') }}" alt="" height="200" width="200">
 
                 <p class="h4 mb-4">Log in</p>
 
