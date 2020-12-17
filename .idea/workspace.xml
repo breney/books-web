@@ -19,9 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd404e73-8dcf-425d-9d73-bfcef433cc94" name="Default Changelist" comment="login and register working">
+    <list default="true" id="dd404e73-8dcf-425d-9d73-bfcef433cc94" name="Default Changelist" comment="images bug fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,21 +153,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Models" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\laravel-project" />
-      <recent name="C:\Users\Bruno\Desktop\laravel-project\database\migrations" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\laravel-project\public" />
       <recent name="C:\xampp\htdocs\laravel-project\public\storage\images" />
       <recent name="C:\xampp\htdocs\laravel-project\public\storage" />
       <recent name="C:\xampp\htdocs\laravel-project\storage\app\public" />
       <recent name="C:\xampp\htdocs\laravel-project\storage\app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\laravel-project\app\Models" />
+      <recent name="C:\xampp\htdocs\laravel-project" />
+      <recent name="C:\Users\Bruno\Desktop\laravel-project\database\migrations" />
     </key>
   </component>
   <component name="RunManager">
@@ -186,7 +188,8 @@
       <workItem from="1607435512060" duration="14728000" />
       <workItem from="1608042668213" duration="66000" />
       <workItem from="1608042752934" duration="10779000" />
-      <workItem from="1608225731656" duration="692000" />
+      <workItem from="1608225731656" duration="959000" />
+      <workItem from="1608226981596" duration="536000" />
     </task>
     <task id="LOCAL-00001" summary="sucesso, migrations working and images aswell">
       <created>1608045539684</created>
@@ -209,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608055046857</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="images bug fixed">
+      <created>1608226476478</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608226476478</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +240,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="sucesso, migrations working and images aswell" />
     <MESSAGE value="login and register working" />
-    <option name="LAST_COMMIT_MESSAGE" value="login and register working" />
+    <MESSAGE value="images bug fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="images bug fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="474" y="218" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607452744023">
@@ -242,9 +253,9 @@
     </state>
     <state x="2636" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608046670807" />
     <state x="716" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607441312186" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608055052043">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608226480012">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608055052043" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608226480012" />
   </component>
 </project>
