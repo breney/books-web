@@ -56,17 +56,6 @@
 
             </form>
 
-               @if(session()->has('error'))
-                <div class="alert alert-danger">
-                    <button type="button" class="close" data-dismiss="alert">x</button>
-                    {{ session()->has('error') }}
-                </div>
-
-            @endif
-
-
-
-
 
 
         </div>

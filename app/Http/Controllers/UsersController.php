@@ -6,7 +6,10 @@ use App\Models\User;
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
+use SebastianBergmann\Environment\Console;
 use Validator;
 
 
@@ -33,12 +36,16 @@ class UsersController extends Controller
             'password' => $request->get('password')
         ];
 
+        $users = User::where('email','=',$request->get('email'))->first();
+
         if(Auth::attempt($user_data)){
+            if($users -> permission == 1){
+                return view('admin.adminhome');
+            }
             return view('pages.about');
-        }else{
+        }
             return view('auth.login');
 
-        }
     }
 
     function registerUser(Request $request){
@@ -54,7 +61,7 @@ class UsersController extends Controller
         User::create(['firstName' => request()->get('firstName'),
             'lastName' => request()->get('lastName'),
             'email' => request()->get('email'),
-            'password' => request()->get('password'),
+            'password' => Hash::make(request()->get('password')),
             'permission' => 0
             ]);
         return view('pages.about');

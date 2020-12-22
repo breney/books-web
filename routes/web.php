@@ -21,12 +21,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [UsersController::class, 'login'])->name("login");
 Route::post('/', [UsersController::class, 'checkLogin'])->name("checkLogin");
 
+Route::get('/logout',[UsersController::class,'logout'])->name("logout");
 
 Route::get('/register', [UsersController::class, 'register'])->name("register");
 Route::post('/register', [UsersController::class, 'registerUser'])->name("registerUser");
 
-Route::get('/about', function () {
-    return view('pages.about');
+Route::get('/about', function () {return view('pages.about');
+
 });
 
 

@@ -21,8 +21,15 @@
   <component name="ChangeListManager">
     <list default="true" id="dd404e73-8dcf-425d-9d73-bfcef433cc94" name="Default Changelist" comment="images bug fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,19 +160,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Bruno\PhpstormProjects\laravel-project\resources\views" />
       <recent name="C:\xampp\htdocs\laravel-project\public" />
       <recent name="C:\xampp\htdocs\laravel-project\public\storage\images" />
       <recent name="C:\xampp\htdocs\laravel-project\public\storage" />
       <recent name="C:\xampp\htdocs\laravel-project\storage\app\public" />
-      <recent name="C:\xampp\htdocs\laravel-project\storage\app" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Bruno\PhpstormProjects\laravel-project" />
       <recent name="C:\xampp\htdocs\laravel-project\app\Models" />
       <recent name="C:\xampp\htdocs\laravel-project" />
       <recent name="C:\Users\Bruno\Desktop\laravel-project\database\migrations" />
@@ -190,6 +199,9 @@
       <workItem from="1608042752934" duration="10779000" />
       <workItem from="1608225731656" duration="959000" />
       <workItem from="1608226981596" duration="536000" />
+      <workItem from="1608650507799" duration="1550000" />
+      <workItem from="1608652132198" duration="38000" />
+      <workItem from="1608652224729" duration="6283000" />
     </task>
     <task id="LOCAL-00001" summary="sucesso, migrations working and images aswell">
       <created>1608045539684</created>
@@ -244,6 +256,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="images bug fixed" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="336" y="361" key="#SQL_Dialects" timestamp="1608654030182">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="336" y="361" key="#SQL_Dialects/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608654030182" />
     <state x="474" y="218" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607452744023">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -253,9 +269,21 @@
     </state>
     <state x="2636" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608046670807" />
     <state x="716" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607441312186" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608660495624">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608660495624" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1608659819580">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608659819580" />
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608226480012">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608226480012" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1608658368344">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608658368344" />
   </component>
 </project>

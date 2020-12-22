@@ -25,24 +25,31 @@
 </head>
 <body >
 
+<nav class="navbar navbar-light bg-light">
+    <div class="navbar navbar-extend navbar-light bg-light">
+        <img src="{{ asset('images/bookslogo.png') }}" alt="" height="50" width="50">
 
-<nav class="navbar navbar-expand navbar-light bg-light">
+        <span class="navbar-brand" >BooksWeb</span>
+        <ul class="navbar-nav " style="flex-direction: row;">
+            <li class="nav-item active mr-2">
+                <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item mr-2">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Desativado</a>
+            </li>
+        </ul>
+    </div>
 
-    <img src="{{ url('storage/images/bookslogo.png') }}" alt="" height="50" width="50">
+    <form class="form-inline" action="{{ route('logout') }}" method="get">
 
-    <span class="navbar-brand" >BooksWeb</span>
-    <ul class="navbar-nav ">
-        <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" href="#">Desativado</a>
-        </li>
-    </ul>
+        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Logout</button>
+    </form>
 </nav>
+
+
 <div>
 
 </div>
@@ -54,7 +61,7 @@
         </div>
         <div class="row" >
             <div class="col col-6">
-                <img src="{{ url('storage/images/1087815.png') }}" alt="" height="400" width="400">
+                <img src="{{ asset('images/1087815.png') }}" alt="" height="400" width="400">
             </div>
             <div class="col col-6" >
                 <span>Projeto foi realizado porque foi pedido pela disciplina.Obrigado.</span>
@@ -68,7 +75,7 @@
         </div>
         <div class="row" >
             <div class="col col-6">
-                <img src="{{ url('storage/images/prog-soft.png') }}" alt="" height="400" width="400">
+                <img src="{{ asset('images/prog-soft.png') }}" alt="" height="400" width="400">
             </div>
             <div class="col col-6" >
 
@@ -94,7 +101,7 @@
 </html>
 
 <style>
-    .navbar{
+    nav{
         border-bottom: saddlebrown 2px solid;
         background: white;
     }
