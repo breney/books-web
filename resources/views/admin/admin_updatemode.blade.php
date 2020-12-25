@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Log in</title>
+    <title>ADMIN MODE</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -28,17 +28,17 @@
 
 <nav class="navbar navbar-light bg-light">
     <div class="navbar navbar-extend navbar-light bg-light">
-        <img src="{{ url('storage/images/bookslogo.png') }}" alt="" height="50" width="50">
+        <img src="{{asset('images/bookslogo.png')}}" alt="" height="50" width="50">
 
         <span class="navbar-brand" >BooksWeb</span>
         <ul class="navbar-nav  ">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Admin mode</span></a>
+                <a class="nav-link" href="{{route('admin')}}">AdminMode</a>
             </li>
         </ul>
     </div>
 
-    <form class="form-inline">
+    <form class="form-inline" action="{{ route('logout') }}" method="get">
         <ul class="navbar-nav ">
             <li class="nav-item active">
                 <span class="nav-link mr-2" href="#">Welcome Bruno Pereira </span>
@@ -48,25 +48,58 @@
     </form>
 </nav>
 
-<div style="height: 80%; display: flex;align-items: center; justify-content: center;">
+<div class="container mt-3" >
+    <div class="row">
+        <div class="col box">
+            <form class="text-center border border-light p-5 " action="{{route('updateBook')}}" method="post">
+                @csrf
+                <img src="{{asset('images/update.png')}}" alt="" height="200" width="200">
 
-    <div class="container">
-        <form class="text-center border border-light p-5" action="" method="post">
+                <p class="h4 mb-4">Update Books</p>
+
+                <input type="text" name="idBook" class="form-control mb-4" placeholder="Book ID">
+
+                <input type="text" name="title" class="form-control mb-4" placeholder="Book Title">
+
+                <input type="text" name="genre" class="form-control mb-4" placeholder="Book genre">
+
+                <input type="text" name="num" class="form-control mb-4" placeholder="Pages number">
+
+                <input type="text" name="date" class="form-control mb-4" placeholder="Publish date">
+
+                <input type="text" name="img_url" class="form-control mb-4" placeholder="Image URL">
+
+                <input type="text" name="edition" class="form-control mb-4" placeholder="Edition">
 
 
-            <img src="https://lh3.googleusercontent.com/proxy/tKieySucTzpN5RIrhutyhdy_NxqpXOCU13faV2fD_0nirNc-0ffn-Dim1yBq5Io0QCSg_IPRvOvD--HuYdkb_5cjkxQ4RW29B4HBODNJmaSwR3nRmonP4dnPgg" alt="" height="200" width="200">
+                <button class="btn btn-info btn-block my-4" type="submit">Update</button>
 
-            <p class="h4 mb-4">Update MODE</p>
+            </form>
+        </div>
+
+        <div class="col box ml-5">
+            <form class="text-center border border-light p-5 " action="{{route('updateAuthor')}}" method="post">
+                @csrf
+                <img src="{{asset('images/update.png')}}" alt="" height="200" width="200">
+
+                <p class="h4 mb-4">Update Author</p>
+
+                <input type="text" name="idAuthor" class="form-control mb-4" placeholder="Author ID">
+
+                <input type="text" name="name" class="form-control mb-4" placeholder="Name">
+
+                <input type="text" name="age" class="form-control mb-4" placeholder="Age">
+
+                <input type="text" name="nationality" class="form-control mb-4" placeholder="Nationality">
+
+                <input type="text" name="country" class="form-control mb-4" placeholder="Country">
 
 
-            <input type="text" name="email" class="form-control mb-4" placeholder="Table name">
 
+                <button class="btn btn-info btn-block my-4" type="submit">Update</button>
 
-            <input type="text" name="password" class="form-control mb-4" placeholder="SQL CODE">
-
-            <button class="btn btn-info btn-block my-4" type="submit">Update</button>
-
-        </form>
+            </form>
+        </div>
     </div>
 </div>
 
@@ -96,7 +129,7 @@
         justify-content: center;
     }
 
-    .container{
+    .box{
         background:white;
         border:black 2px solid;
         border-radius: 10px;

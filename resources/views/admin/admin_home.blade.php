@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Log in</title>
+    <title>ADMIN MODE</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -28,17 +28,17 @@
 
 <nav class="navbar navbar-light bg-light">
     <div class="navbar navbar-extend navbar-light bg-light">
-        <img src="{{ url('storage/images/bookslogo.png') }}" alt="" height="50" width="50">
+        <img src="{{ asset('images/bookslogo.png') }}" alt="" height="50" width="50">
 
         <span class="navbar-brand" >BooksWeb</span>
         <ul class="navbar-nav  ">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Admin mode</a>
+                <a class="nav-link" href="{{route('admin')}}">AdminMode</a>
             </li>
         </ul>
     </div>
 
-    <form class="form-inline">
+    <form class="form-inline" action="{{ route('logout') }}" method="get">
         <ul class="navbar-nav ">
             <li class="nav-item active">
                 <span class="nav-link mr-2" href="#">Welcome Bruno Pereira </span>
@@ -54,26 +54,26 @@
         <div class="container" style="margin-left:10px;">
             <div class="row" style="text-align: center;">
                 <div class="col col-4">
-                    <img src="https://www.flaticon.com/svg/static/icons/svg/2132/2132434.svg" alt="" height="400" width="400">
+                    <img src="{{asset('images/insertlogo.svg')}}" alt="" height="400" width="400">
                     <ul class="navbar-nav  ">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Insert MODE</a>
+                            <a class="nav-link" href="{{ route("admininsert")  }}">Insert MODE</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col col-4" >
-                    <img src="https://lh3.googleusercontent.com/proxy/WLOdtEKwHf0kM0KIo6xqYoj4CMSP13qkuDkFvIy-9SflezKAV4iaVrJ1YXsUF4UgJTFbT8Sy68K9d-K4fbvvrs_mthf1DrFupXpg3D6azpzWvg" alt="" height="400" width="400">
+                    <img src="{{asset('images/deletepng.png')}}" alt="" height="400" width="400">
                     <ul class="navbar-nav  ">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Delete MODE</a>
+                            <a class="nav-link" href="{{route("admindelete")}}">Delete MODE</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col col-4">
-                    <img src="https://lh3.googleusercontent.com/proxy/tKieySucTzpN5RIrhutyhdy_NxqpXOCU13faV2fD_0nirNc-0ffn-Dim1yBq5Io0QCSg_IPRvOvD--HuYdkb_5cjkxQ4RW29B4HBODNJmaSwR3nRmonP4dnPgg" alt="" height="400" width="400">
+                    <img src="{{asset('images/update.png')}}" alt="" height="400" width="400">
                     <ul class="navbar-nav  ">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Update MODE</a>
+                            <a class="nav-link" href="{{route("adminupdate")}}">Update MODE</a>
                         </li>
                     </ul>
                 </div>

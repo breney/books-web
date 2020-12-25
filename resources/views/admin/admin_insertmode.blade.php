@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Log in</title>
+    <title>ADMIN MODE</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -28,17 +28,17 @@
 
 <nav class="navbar navbar-light bg-light">
     <div class="navbar navbar-extend navbar-light bg-light">
-        <img src="{{ url('storage/images/bookslogo.png') }}" alt="" height="50" width="50">
+        <img src="{{asset('images/bookslogo.png')}}" alt="" height="50" width="50">
 
         <span class="navbar-brand" >BooksWeb</span>
         <ul class="navbar-nav  ">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Admin mode</span></a>
+                <a class="nav-link" href="{{route('admin')}}">AdminMode</a>
             </li>
         </ul>
     </div>
 
-    <form class="form-inline">
+    <form class="form-inline" action="{{ route('logout') }}" method="get">
         <ul class="navbar-nav ">
             <li class="nav-item active">
                 <span class="nav-link mr-2" href="#">Welcome Bruno Pereira </span>
@@ -48,27 +48,61 @@
     </form>
 </nav>
 
-<div style="height: 80%; display: flex;align-items: center; justify-content: center;">
+<div class="container mt-3" >
+    <div class="row">
+        <div class="col box">
+            <form class="text-center border border-light p-5 " action="{{route('insertBooks')}}" method="post">
+                @csrf
+                <img src="{{asset('images/insertlogo.svg')}}" alt="" height="200" width="200">
 
-    <div class="container">
-        <form class="text-center border border-light p-5" action="" method="post">
+                <p class="h4 mb-4">Insert Books</p>
+
+                <input type="text" name="title" class="form-control mb-4" placeholder="Book Title">
+
+                <input type="text" name="genre" class="form-control mb-4" placeholder="Book genre">
+
+                <input type="text" name="num" class="form-control mb-4" placeholder="Pages number">
+
+                <input type="text" name="date" class="form-control mb-4" placeholder="Publish date">
+
+                <input type="text" name="img_url" class="form-control mb-4" placeholder="Image URL">
+
+                <input type="text" name="edition" class="form-control mb-4" placeholder="Edition">
+
+                <input type="text" name="autorId" class="form-control mb-4" placeholder="Author ID">
+
+                <button class="btn btn-info btn-block my-4" type="submit">Insert</button>
+
+            </form>
+        </div>
+
+        <div class="col box ml-5">
+            <form class="text-center border border-light p-5 " action="{{route('insertAuthors')}}" method="post">
+                @csrf
+                <img src="{{asset('images/author.png')}}" alt="" height="200" width="200">
+
+                <p class="h4 mb-4">Insert Author</p>
 
 
-            <img src="https://www.flaticon.com/svg/static/icons/svg/2132/2132434.svg" alt="" height="200" width="200">
 
-            <p class="h4 mb-4">Insert MODE</p>
+                <input type="text" name="name" class="form-control mb-4" placeholder="Name">
+
+                <input type="text" name="age" class="form-control mb-4" placeholder="Age">
+
+                <input type="text" name="nationality" class="form-control mb-4" placeholder="Nationality">
+
+                <input type="text" name="country" class="form-control mb-4" placeholder="Country">
 
 
-            <input type="text" name="email" class="form-control mb-4" placeholder="Table name">
 
+                <button class="btn btn-info btn-block my-4" type="submit">Insert</button>
 
-            <input type="text" name="password" class="form-control mb-4" placeholder="SQL CODE">
-
-            <button class="btn btn-info btn-block my-4" type="submit">Insert</button>
-
-        </form>
+            </form>
+        </div>
     </div>
-</div>
+    </div>
+
+
 
 
 
@@ -96,13 +130,11 @@
         justify-content: center;
     }
 
-    .container{
+    .box{
         background:white;
         border:black 2px solid;
         border-radius: 10px;
-        display: grid;
         align-items: center;
-
     }
 
 

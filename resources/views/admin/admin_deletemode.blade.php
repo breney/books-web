@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Log in</title>
+    <title>ADMIN MODE</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -28,45 +28,51 @@
 
 <nav class="navbar navbar-light bg-light">
     <div class="navbar navbar-extend navbar-light bg-light">
-        <img src="{{ url('storage/images/bookslogo.png') }}" alt="" height="50" width="50">
+        <img src="{{ asset('images/bookslogo.png') }}" alt="" height="50" width="50">
 
         <span class="navbar-brand" >BooksWeb</span>
         <ul class="navbar-nav  ">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Admin mode</span></a>
+                <a class="nav-link" href="{{route('admin')}}">AdminMode</a>
             </li>
         </ul>
     </div>
 
-    <form class="form-inline">
+    <form class="form-inline" action="{{ route('logout') }}" method="get">
         <ul class="navbar-nav ">
             <li class="nav-item active">
-                <span class="nav-link mr-2" href="#">Welcome Bruno Pereira </span>
+                <span class="nav-link mr-2" href="">Welcome Bruno Pereira </span>
             </li>
         </ul>
         <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Logout</button>
     </form>
 </nav>
 
-<div style="height: 80%; display: flex;align-items: center; justify-content: center;">
+<div style="height: 85%; display: flex;align-items: center; justify-content: center;">
 
     <div class="container">
-        <form class="text-center border border-light p-5" action="" method="post">
+        <div class="text-center border border-light p-5" action="" method="post">
 
 
-            <img src="https://lh3.googleusercontent.com/proxy/WLOdtEKwHf0kM0KIo6xqYoj4CMSP13qkuDkFvIy-9SflezKAV4iaVrJ1YXsUF4UgJTFbT8Sy68K9d-K4fbvvrs_mthf1DrFupXpg3D6azpzWvg" alt="" height="200" width="200">
+            <img src="{{asset('images/deletepng.png')}}" alt="" height="200" width="200">
 
-            <p class="h4 mb-4">Delete MODE</p>
+            <p class="h4 mb-4">Delete MODE BY ID</p>
 
+            <form action="{{route('deleteBook')}}" method="post">
+                @csrf
+                <p class="h4 mb-4">Book</p>
+                <input type="text" name="idBook" class="form-control mb-4" placeholder="Book ID">
+                <button class="btn btn-danger btn-block my-4" type="submit">Delete</button>
+            </form>
 
-            <input type="text" name="email" class="form-control mb-4" placeholder="Table name">
+            <form action="{{route('deleteAuthor')}}" method="post">
+                @csrf
+                <p class="h4 mb-4">Author</p>
+                <input type="text" name="idAuthor" class="form-control mb-4" placeholder="Author ID">
+                <button class="btn btn-danger btn-block my-4" type="submit">Delete</button>
+            </form>
 
-
-            <input type="text" name="password" class="form-control mb-4" placeholder="SQL CODE">
-
-            <button class="btn btn-danger btn-block my-4" type="submit">Delete</button>
-
-        </form>
+        </div>
     </div>
 </div>
 

@@ -19,16 +19,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd404e73-8dcf-425d-9d73-bfcef433cc94" name="Default Changelist" comment="images bug fixed">
+    <list default="true" id="dd404e73-8dcf-425d-9d73-bfcef433cc94" name="Default Changelist" comment="admin">
+      <change afterPath="$PROJECT_DIR$/tests/Unit/app/Http/Models/Book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Author.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_book_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_book_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_deletemode.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_deletemode.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_insertmode.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_insertmode.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_updatemode.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_updatemode.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/adminhome.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,6 +159,16 @@
       <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
       <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
       <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
     </include_path>
   </component>
   <component name="ProjectId" id="1lNRLxk7RWo7pbdoicr8K3K8mnM" />
@@ -162,16 +181,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\laravel-project\public\images" />
+      <recent name="C:\xampp\htdocs\laravel-project\public\author" />
       <recent name="C:\Users\Bruno\PhpstormProjects\laravel-project\resources\views" />
       <recent name="C:\xampp\htdocs\laravel-project\public" />
       <recent name="C:\xampp\htdocs\laravel-project\public\storage\images" />
-      <recent name="C:\xampp\htdocs\laravel-project\public\storage" />
-      <recent name="C:\xampp\htdocs\laravel-project\storage\app\public" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Bruno\PhpstormProjects\laravel-project" />
@@ -201,7 +220,10 @@
       <workItem from="1608226981596" duration="536000" />
       <workItem from="1608650507799" duration="1550000" />
       <workItem from="1608652132198" duration="38000" />
-      <workItem from="1608652224729" duration="6283000" />
+      <workItem from="1608652224729" duration="6629000" />
+      <workItem from="1608911379317" duration="7473000" />
+      <workItem from="1608919050509" duration="44000" />
+      <workItem from="1608919105650" duration="5500000" />
     </task>
     <task id="LOCAL-00001" summary="sucesso, migrations working and images aswell">
       <created>1608045539684</created>
@@ -231,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608226476478</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="admin">
+      <created>1608660952040</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608660952040</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +282,8 @@
     <MESSAGE value="sucesso, migrations working and images aswell" />
     <MESSAGE value="login and register working" />
     <MESSAGE value="images bug fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="images bug fixed" />
+    <MESSAGE value="admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin" />
   </component>
   <component name="WindowStateProjectService">
     <state x="336" y="361" key="#SQL_Dialects" timestamp="1608654030182">
@@ -269,17 +299,26 @@
     </state>
     <state x="2636" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608046670807" />
     <state x="716" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607441312186" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608660495624">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608921723496">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608660495624" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1608659819580">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608921723496" />
+    <state x="739" y="275" key="FileChooserDialogImpl" timestamp="1608917860092">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608659819580" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608226480012">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="739" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608917860092" />
+    <state x="715" y="243" key="NewPhpClassDialog" timestamp="1608917886924">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="715" y="243" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608917886924" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1608919095107">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608919095106" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608660957709">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608660957709" />
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608226480012" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1608658368344">
       <screen x="0" y="0" width="1920" height="1040" />

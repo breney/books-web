@@ -19,6 +19,7 @@ class CreateBookTable extends Migration
             $table->string('genre');
             $table->integer('num_pages');
             $table->date('publish_date');
+            $table->string('img_url');
             $table->integer('edition');
             $table->bigInteger('author_id')->unsigned();
             $table->foreign('author_id')->references('id')->on('authors');

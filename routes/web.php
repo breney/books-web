@@ -1,7 +1,11 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AuthorController;
+use App\Http\Controllers\BookController;
 use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,13 +25,29 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [UsersController::class, 'login'])->name("login");
 Route::post('/', [UsersController::class, 'checkLogin'])->name("checkLogin");
 
-Route::get('/logout',[UsersController::class,'logout'])->name("logout");
+Route::get('/logout', [UsersController::class, 'logout'])->name("logout");
 
 Route::get('/register', [UsersController::class, 'register'])->name("register");
 Route::post('/register', [UsersController::class, 'registerUser'])->name("registerUser");
 
-Route::get('/about', function () {return view('pages.about');
+Route::get('/about', fn() => view('pages.about'));
 
-});
+Route::get('/admin', [AdminController::class, 'adminHome'])->name('admin');
+
+Route::get('/admininsert', [AdminController::class, 'adminInsert'])->name('admininsert');
+Route::post('/insertBooks', [BookController::class, 'insertBooks'])->name('insertBooks');
+Route::post('/insertAuthors', [AuthorController::class, 'insertAuthors'])->name('insertAuthors');
+
+
+Route::get('/admindelete', [AdminController::class, 'adminDelete'])->name('admindelete');
+Route::post('/deleteBook', [BookController::class, 'deleteBook'])->name('deleteBook');
+Route::post('/deleteAuthor', [AuthorController::class, 'deleteAuthor'])->name('deleteAuthor');
+
+
+Route::get('/adminupdate', [AdminController::class, 'adminUpdate'])->name('adminupdate');
+Route::post('/updateBook', [BookController::class, 'updateBook'])->name('updateBook');
+Route::post('/updateAuthor', [AuthorController::class, 'updateAuthor'])->name('updateAuthor');
+
+
 
 
