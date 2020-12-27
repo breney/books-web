@@ -45,6 +45,7 @@
             <img class="card-img-top mt-1" src="{{asset('images/author.png')}}" alt="image" style="width: 200px; height: 200px;">
             <div class="card-body">
                 <h4 class="card-title">{{$author->name}}</h4>
+                <p class="card-text">Name : {{ $author->name  }}</p>
                 <p class="card-text">Publish date : {{ $author->age  }}</p>
                 <p class="card-text">Number of pages : {{ $author->nationality  }}</p>
                 <p class="card-text">Author : {{ $author->country  }}</p>

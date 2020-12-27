@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
@@ -31,6 +32,7 @@ Route::get('/register', [UsersController::class, 'register'])->name("register");
 Route::post('/register', [UsersController::class, 'registerUser'])->name("registerUser");
 
 Route::get('/books',[BookController::class,'getBooks'])->name('books');
+Route::get('/detalhes/{id}',[BookController::class,'getBookDetail'])->name('detalhes');
 
 Route::get('/find',function(){return view('pages.find');})->name('find');
 Route::get('/book',[BookController::class,'getBookById'])->name('bookById');
@@ -39,6 +41,9 @@ Route::get('/author',[AuthorController::class,'getAuthorById'])->name('authorByI
 Route::get('/about', fn() => view('pages.about'))->name('about');
 
 Route::get('/admin', [AdminController::class, 'adminHome'])->name('admin');
+
+Route::get('/contact', fn() => view('pages.contactus'))->name('contact');
+Route::get('/emailsend',[MailController::class,'basic_email'])->name('email');
 
 Route::get('/admininsert', [AdminController::class, 'adminInsert'])->name('admininsert');
 Route::post('/insertBooks', [BookController::class, 'insertBooks'])->name('insertBooks');

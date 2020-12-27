@@ -40,6 +40,9 @@
             <li class="nav-item mr-2">
                 <a class="nav-link" href="{{route('about')}}">About</a>
             </li>
+            <li class="nav-item mr-2">
+                <a class="nav-link" href="{{route('contact')}}">Contact</a>
+            </li>
         </ul>
     </div>
 
@@ -60,6 +63,9 @@
                     <p class="card-text">Publish date : {{ $book->publish_date  }}</p>
                     <p class="card-text">Number of pages : {{ $book->num_pages  }}</p>
                     <p class="card-text">Author : {{ $book->author->name  }}</p>
+                    <form action="/detalhes/{{$book->id}}" method="get">
+                        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Detalhes</button>
+                    </form>
                 </div>
             </div>
         @endforeach

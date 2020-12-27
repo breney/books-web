@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Find</title>
+    <title>About</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -30,20 +30,6 @@
         <img src="{{ asset('images/bookslogo.png') }}" alt="" height="50" width="50">
 
         <span class="navbar-brand" >BooksWeb</span>
-        <ul class="navbar-nav " style="flex-direction: row;">
-            <li class="nav-item  mr-2">
-                <a class="nav-link" href="{{route('books')}}">Books</a>
-            </li>
-            <li class="nav-item active mr-2">
-                <a class="nav-link" href="{{route('find')}}">Find</a>
-            </li>
-            <li class="nav-item mr-2">
-                <a class="nav-link" href="{{route('about')}}">About</a>
-            </li>
-            <li class="nav-item mr-2">
-                <a class="nav-link" href="{{route('contact')}}">Contact</a>
-            </li>
-        </ul>
     </div>
 
     <form class="form-inline" action="{{ route('logout') }}" method="get">
@@ -51,40 +37,34 @@
         <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Logout</button>
     </form>
 </nav>
+<div style="height: 10%;">
 
-<div class="container mt-2"  style="height: 85%; display: flex;align-items: center; justify-content: center;">
+</div>
+<div class="container mt-2"  style="width: 100%;">
     <div class="row">
         <div class="col box">
-            <form class="text-center border border-light p-5 " action="{{route('bookById')}}" method="get">
-                @csrf
-                <img src="{{asset('images/insertlogo.svg')}}" alt="" height="200" width="200">
-
-                <p class="h4 mb-4">Find book By id</p>
-
-                <input type="text" name="id" class="form-control mb-4" placeholder="Book ID">
-
-                <button class="btn btn-info btn-block my-4" type="submit">Find</button>
-
-            </form>
+            <div class="card text-center" >
+                <div class="card-header">
+                    {{$book -> title}}
+                </div>
+                <div class="card-body">
+                        <img src="{{$book->img_url}}" alt="" style="height: 200px;width: 200px;">
+                    <h5 class="card-text mt-2">Genero : {{$book->genre}}</h5>
+                    <p class="card-text">Num Pages : {{ $book->num_pages }} </p>
+                    <p class="card-text">Author Name : {{ $book->author->name }} </p>
+                    <p class="card-text">Country : {{ $book->author->country }}  </p>
+                    <p class="card-text">Nationality : {{ $book->author->nationality }}  </p>
+                    <form action="{{route('books')}}" method="get">
+                        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Voltar</button>
+                    </form>
+                </div>
+                <div class="card-footer text-muted">
+                    {{$book -> publish_date}}
+                </div>
+            </div>
         </div>
-
-        <div class="col box ml-5">
-            <form class="text-center border border-light p-5 " action="{{route('authorById')}}" method="get">
-                @csrf
-                <img src="{{asset('images/author.png')}}" alt="" height="200" width="200">
-
-                <p class="h4 mb-4">Find Author By id</p>
-
-                <input type="text" name="id" class="form-control mb-4" placeholder="Author ID">
-
-
-
-                <button class="btn btn-info btn-block my-4" type="submit">Find</button>
-
-            </form>
     </div>
 </div>
-
 
 </body>
 
@@ -103,18 +83,7 @@
     }
 
 
-    .col{
-        display:flex;
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .box{
-        background:white;
-        border:black 2px solid;
-        border-radius: 10px;
 
-        align-items: center;
-    }
 
 </style>

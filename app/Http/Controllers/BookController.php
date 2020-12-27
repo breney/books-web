@@ -19,6 +19,13 @@ class BookController extends Controller
         return view('pages.books', ['books' => $books]);
     }
 
+    function getBookDetail($id){
+
+        $bookID = Book::find($id);
+
+        return view('pages.detalhes',['book' => $bookID]);
+    }
+
     function insertBooks(Request $request){
 
         $this->validate($request,[

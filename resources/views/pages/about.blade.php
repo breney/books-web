@@ -40,6 +40,9 @@
             <li class="nav-item active mr-2">
                 <a class="nav-link" href="{{route('about')}}">About </a>
             </li>
+            <li class="nav-item mr-2">
+                <a class="nav-link" href="{{route('contact')}}">Contact</a>
+            </li>
         </ul>
     </div>
 
