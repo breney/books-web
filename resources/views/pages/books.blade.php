@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>About</title>
+    <title>Books</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -31,14 +31,14 @@
 
         <span class="navbar-brand" >BooksWeb</span>
         <ul class="navbar-nav " style="flex-direction: row;">
-            <li class="nav-item mr-2">
-                <a class="nav-link" href="{{route('books')}}">Books </a>
-            </li>
-            <li class="nav-item mr-2">
-                <a class="nav-link" href="{{route('find')}}">Find </a>
-            </li>
             <li class="nav-item active mr-2">
-                <a class="nav-link" href="{{route('about')}}">About </a>
+                <a class="nav-link" href="{{route('books')}}">Books</a>
+            </li>
+            <li class="nav-item mr-2">
+                <a class="nav-link" href="{{route('find')}}">Find</a>
+            </li>
+            <li class="nav-item mr-2">
+                <a class="nav-link" href="{{route('about')}}">About</a>
             </li>
         </ul>
     </div>
@@ -49,49 +49,21 @@
     </form>
 </nav>
 
+<div class="container mt-1" >
+    <div class="row">
 
-<div>
-
-</div>
-<div style=" height: 80%; display: flex; align-items: center; grid-column-gap: 50px;">
-
-    <div class="container" style="margin-left:10px;">
-        <div class="row col col-12" style="border-top:0;border-right: 0;">
-            Aplicações Centradas em Redes
-        </div>
-        <div class="row" >
-            <div class="col col-6">
-                <img src="{{ asset('images/1087815.png') }}" alt="" height="400" width="400">
+        @foreach($books as $book)
+            <div class="card box mr-2 mt-2" style="width:20rem;">
+                <img class="card-img-top mt-1" src="{{$book->img_url}}" alt="image" style="width: 200px; height: 200px;">
+                <div class="card-body">
+                    <h4 class="card-title">{{$book->title}}</h4>
+                    <p class="card-text">Publish date : {{ $book->publish_date  }}</p>
+                    <p class="card-text">Number of pages : {{ $book->num_pages  }}</p>
+                    <p class="card-text">Author : {{ $book->author->name  }}</p>
+                </div>
             </div>
-            <div class="col col-6" >
-                <span>Projeto foi realizado porque foi pedido pela disciplina.Obrigado.</span>
-            </div>
-        </div>
-    </div>
-<!--//media queries -->
-    <div class="container" style="margin-right:10px;">
-        <div class="row col col-12" style="border-top:0;border-right: 0;">
-            Made by Bruno Pereira
-        </div>
-        <div class="row" >
-            <div class="col col-6">
-                <img src="{{ asset('images/prog-soft.png') }}" alt="" height="400" width="400">
-            </div>
-            <div class="col col-6" >
+        @endforeach
 
-                <span>Social Networks</span>
-                <hr>
-                <span class="fa fa-twitter"></span>
-                <span> @brunop292</span>
-
-                <span class="fa fa-github"></span>
-                <span>breney</span>
-
-                <span class="fa fa-instagram"></span>
-                <span>brunopereira222</span>
-
-            </div>
-        </div>
     </div>
 </div>
 
@@ -112,27 +84,19 @@
         background: #f1e5d8;
     }
 
-    .row{
-        border-top: black 2px solid;
-        justify-content: center;
-        text-align: center;
-    }
 
     .col{
         display:flex;
         flex-direction: column;
-        justify-content: center;
+        text-align: center;
     }
 
-    .container{
+    .box{
         background:white;
         border:black 2px solid;
         border-radius: 10px;
-        display: grid;
+
         align-items: center;
-
     }
-
-
 
 </style>

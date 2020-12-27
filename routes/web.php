@@ -30,7 +30,13 @@ Route::get('/logout', [UsersController::class, 'logout'])->name("logout");
 Route::get('/register', [UsersController::class, 'register'])->name("register");
 Route::post('/register', [UsersController::class, 'registerUser'])->name("registerUser");
 
-Route::get('/about', fn() => view('pages.about'));
+Route::get('/books',[BookController::class,'getBooks'])->name('books');
+
+Route::get('/find',function(){return view('pages.find');})->name('find');
+Route::get('/book',[BookController::class,'getBookById'])->name('bookById');
+Route::get('/author',[AuthorController::class,'getAuthorById'])->name('authorById');
+
+Route::get('/about', fn() => view('pages.about'))->name('about');
 
 Route::get('/admin', [AdminController::class, 'adminHome'])->name('admin');
 

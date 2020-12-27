@@ -39,7 +39,7 @@ class UsersController extends Controller
             if($users -> permission == 1){
                 return view('admin.admin_home');
             }
-            return view('pages.about');
+            return redirect()->to('books');
         }
             return view('auth.login');
 

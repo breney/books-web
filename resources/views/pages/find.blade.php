@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>About</title>
+    <title>Find</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -31,14 +31,14 @@
 
         <span class="navbar-brand" >BooksWeb</span>
         <ul class="navbar-nav " style="flex-direction: row;">
-            <li class="nav-item mr-2">
-                <a class="nav-link" href="{{route('books')}}">Books </a>
-            </li>
-            <li class="nav-item mr-2">
-                <a class="nav-link" href="{{route('find')}}">Find </a>
+            <li class="nav-item  mr-2">
+                <a class="nav-link" href="{{route('books')}}">Books</a>
             </li>
             <li class="nav-item active mr-2">
-                <a class="nav-link" href="{{route('about')}}">About </a>
+                <a class="nav-link" href="{{route('find')}}">Find</a>
+            </li>
+            <li class="nav-item mr-2">
+                <a class="nav-link" href="{{route('about')}}">About</a>
             </li>
         </ul>
     </div>
@@ -49,49 +49,36 @@
     </form>
 </nav>
 
+<div class="container mt-2" >
+    <div class="row">
+        <div class="col box">
+            <form class="text-center border border-light p-5 " action="{{route('bookById')}}" method="get">
+                @csrf
+                <img src="{{asset('images/insertlogo.svg')}}" alt="" height="200" width="200">
 
-<div>
+                <p class="h4 mb-4">Find book By id</p>
 
-</div>
-<div style=" height: 80%; display: flex; align-items: center; grid-column-gap: 50px;">
+                <input type="text" name="id" class="form-control mb-4" placeholder="Book ID">
 
-    <div class="container" style="margin-left:10px;">
-        <div class="row col col-12" style="border-top:0;border-right: 0;">
-            Aplicações Centradas em Redes
+                <button class="btn btn-info btn-block my-4" type="submit">Find</button>
+
+            </form>
         </div>
-        <div class="row" >
-            <div class="col col-6">
-                <img src="{{ asset('images/1087815.png') }}" alt="" height="400" width="400">
-            </div>
-            <div class="col col-6" >
-                <span>Projeto foi realizado porque foi pedido pela disciplina.Obrigado.</span>
-            </div>
-        </div>
-    </div>
-<!--//media queries -->
-    <div class="container" style="margin-right:10px;">
-        <div class="row col col-12" style="border-top:0;border-right: 0;">
-            Made by Bruno Pereira
-        </div>
-        <div class="row" >
-            <div class="col col-6">
-                <img src="{{ asset('images/prog-soft.png') }}" alt="" height="400" width="400">
-            </div>
-            <div class="col col-6" >
 
-                <span>Social Networks</span>
-                <hr>
-                <span class="fa fa-twitter"></span>
-                <span> @brunop292</span>
+        <div class="col box ml-5">
+            <form class="text-center border border-light p-5 " action="{{route('authorById')}}" method="get">
+                @csrf
+                <img src="{{asset('images/author.png')}}" alt="" height="200" width="200">
 
-                <span class="fa fa-github"></span>
-                <span>breney</span>
+                <p class="h4 mb-4">Find Author By id</p>
 
-                <span class="fa fa-instagram"></span>
-                <span>brunopereira222</span>
+                <input type="text" name="id" class="form-control mb-4" placeholder="Author ID">
 
-            </div>
-        </div>
+
+
+                <button class="btn btn-info btn-block my-4" type="submit">Find</button>
+
+            </form>
     </div>
 </div>
 
@@ -112,27 +99,19 @@
         background: #f1e5d8;
     }
 
-    .row{
-        border-top: black 2px solid;
-        justify-content: center;
-        text-align: center;
-    }
 
     .col{
         display:flex;
         flex-direction: column;
-        justify-content: center;
+        text-align: center;
     }
 
-    .container{
+    .box{
         background:white;
         border:black 2px solid;
         border-radius: 10px;
-        display: grid;
+
         align-items: center;
-
     }
-
-
 
 </style>

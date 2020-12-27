@@ -19,25 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd404e73-8dcf-425d-9d73-bfcef433cc94" name="Default Changelist" comment="admin">
-      <change afterPath="$PROJECT_DIR$/tests/Unit/app/Http/Models/Book.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="dd404e73-8dcf-425d-9d73-bfcef433cc94" name="Default Changelist" comment="admin mode complete">
+      <change afterPath="$PROJECT_DIR$/resources/views/data/author.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/data/book.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/find.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Author.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Author.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Book.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_book_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_book_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_deletemode.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_deletemode.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_insertmode.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_insertmode.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_updatemode.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_updatemode.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/adminhome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,24 +171,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/data" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\laravel-project\resources\views\data" />
+      <recent name="C:\xampp\htdocs\laravel-project\resources\views\pages" />
+      <recent name="C:\xampp\htdocs\laravel-project\resources\views" />
+      <recent name="C:\Users\Bruno\PhpstormProjects\laravel-project" />
+      <recent name="C:\xampp\htdocs\laravel-project\app\Models" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\laravel-project\public\images" />
       <recent name="C:\xampp\htdocs\laravel-project\public\author" />
       <recent name="C:\Users\Bruno\PhpstormProjects\laravel-project\resources\views" />
       <recent name="C:\xampp\htdocs\laravel-project\public" />
       <recent name="C:\xampp\htdocs\laravel-project\public\storage\images" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Bruno\PhpstormProjects\laravel-project" />
-      <recent name="C:\xampp\htdocs\laravel-project\app\Models" />
-      <recent name="C:\xampp\htdocs\laravel-project" />
-      <recent name="C:\Users\Bruno\Desktop\laravel-project\database\migrations" />
     </key>
   </component>
   <component name="RunManager">
@@ -223,7 +216,8 @@
       <workItem from="1608652224729" duration="6629000" />
       <workItem from="1608911379317" duration="7473000" />
       <workItem from="1608919050509" duration="44000" />
-      <workItem from="1608919105650" duration="5500000" />
+      <workItem from="1608919105650" duration="6259000" />
+      <workItem from="1609076835865" duration="7190000" />
     </task>
     <task id="LOCAL-00001" summary="sucesso, migrations working and images aswell">
       <created>1608045539684</created>
@@ -260,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608660952040</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="admin mode complete">
+      <created>1608924769054</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1608924769054</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +284,8 @@
     <MESSAGE value="login and register working" />
     <MESSAGE value="images bug fixed" />
     <MESSAGE value="admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin" />
+    <MESSAGE value="admin mode complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin mode complete" />
   </component>
   <component name="WindowStateProjectService">
     <state x="336" y="361" key="#SQL_Dialects" timestamp="1608654030182">
@@ -315,14 +317,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608919095106" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608660957709">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608924770872">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608660957709" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608924770872" />
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608226480012" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1608658368344">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608658368344" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/admin/admin_updatemode.blade.php</url>
+          <line>63</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

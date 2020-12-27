@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class AuthorController extends Controller
 {
+    function getAuthorById(Request $request){
+        $authorID = Author::find($request->get('id'));
+
+        return view('data.author',['author' => $authorID]);
+    }
+
     function insertAuthors(Request $request){
 
         $this->validate($request,[

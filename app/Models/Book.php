@@ -22,4 +22,7 @@ class Book extends Model
 
     public $timestamps = false;
 
+    public function author(){
+        return $this->belongsTo(Author::class);
+    }
 }

@@ -7,6 +7,18 @@ use Illuminate\Http\Request;
 
 class BookController extends Controller
 {
+    function getBookById(Request $request){
+        $bookID = Book::find($request->get('id'));
+
+        return view('data.book',['book' => $bookID]);
+    }
+
+    function getBooks(){
+        $books = Book::all();
+
+        return view('pages.books', ['books' => $books]);
+    }
+
     function insertBooks(Request $request){
 
         $this->validate($request,[
