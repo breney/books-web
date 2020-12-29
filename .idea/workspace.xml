@@ -19,15 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd404e73-8dcf-425d-9d73-bfcef433cc94" name="Default Changelist" comment="done">
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/contactus.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/detalhes.blade.php" afterDir="false" />
+    <list default="true" id="dd404e73-8dcf-425d-9d73-bfcef433cc94" name="Default Changelist" comment="contact and details">
+      <change afterPath="$PROJECT_DIR$/resources/views/public/home_author.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/public/home_book.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/public/home_detalhes.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/public/home_find.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthorController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/data/author.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/data/author.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/books.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/books.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/find.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/find.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,25 +169,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/public" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\laravel-project\resources\views\public" />
+      <recent name="C:\xampp\htdocs\laravel-project\resources\views\pages" />
+      <recent name="C:\xampp\htdocs\laravel-project\resources\views\data" />
+      <recent name="C:\xampp\htdocs\laravel-project\resources\views" />
+      <recent name="C:\Users\Bruno\PhpstormProjects\laravel-project" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\laravel-project\public\images" />
       <recent name="C:\xampp\htdocs\laravel-project\public\author" />
       <recent name="C:\Users\Bruno\PhpstormProjects\laravel-project\resources\views" />
       <recent name="C:\xampp\htdocs\laravel-project\public" />
       <recent name="C:\xampp\htdocs\laravel-project\public\storage\images" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\laravel-project\resources\views\pages" />
-      <recent name="C:\xampp\htdocs\laravel-project\resources\views\data" />
-      <recent name="C:\xampp\htdocs\laravel-project\resources\views" />
-      <recent name="C:\Users\Bruno\PhpstormProjects\laravel-project" />
-      <recent name="C:\xampp\htdocs\laravel-project\app\Models" />
     </key>
   </component>
   <component name="RunManager">
@@ -216,7 +216,9 @@
       <workItem from="1608919050509" duration="44000" />
       <workItem from="1608919105650" duration="6259000" />
       <workItem from="1609076835865" duration="8136000" />
-      <workItem from="1609103525980" duration="6239000" />
+      <workItem from="1609103525980" duration="6533000" />
+      <workItem from="1609180115027" duration="4710000" />
+      <workItem from="1609206602229" duration="951000" />
     </task>
     <task id="LOCAL-00001" summary="sucesso, migrations working and images aswell">
       <created>1608045539684</created>
@@ -267,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609085793678</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="contact and details">
+      <created>1609110030796</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609110030797</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +301,8 @@
     <MESSAGE value="admin" />
     <MESSAGE value="admin mode complete" />
     <MESSAGE value="done" />
-    <option name="LAST_COMMIT_MESSAGE" value="done" />
+    <MESSAGE value="contact and details" />
+    <option name="LAST_COMMIT_MESSAGE" value="contact and details" />
   </component>
   <component name="WindowStateProjectService">
     <state x="336" y="361" key="#SQL_Dialects" timestamp="1608654030182">
@@ -324,11 +334,12 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608919095106" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609085797349">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609206955466">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1609085797349" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1609110032170" />
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608226480012" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609206955466" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1608658368344">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

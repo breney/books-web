@@ -10,7 +10,21 @@ class AuthorController extends Controller
     function getAuthorById(Request $request){
         $authorID = Author::find($request->get('id'));
 
+        if($authorID == null){
+            return view('pages.find');
+        }
+
         return view('data.author',['author' => $authorID]);
+    }
+
+    function getAuthorByIdHome(Request $request){
+        $authorID = Author::find($request->get('id'));
+
+        if($authorID == null){
+            return view('public.home_find');
+        }
+
+        return view('public.home_author',['author' => $authorID]);
     }
 
     function insertAuthors(Request $request){

@@ -10,6 +10,9 @@ class BookController extends Controller
     function getBookById(Request $request){
         $bookID = Book::find($request->get('id'));
 
+        if($bookID == null){
+            return view('pages.find');
+        }
         return view('data.book',['book' => $bookID]);
     }
 
@@ -17,6 +20,8 @@ class BookController extends Controller
         $books = Book::all();
 
         return view('pages.books', ['books' => $books]);
+
+
     }
 
     function getBookDetail($id){
@@ -25,6 +30,33 @@ class BookController extends Controller
 
         return view('pages.detalhes',['book' => $bookID]);
     }
+
+
+
+    function getBooksHome(){
+        $books = Book::all();
+
+        return view('public.home_books',['books' => $books]);
+    }
+
+    function getBookDetailHome($id){
+
+        $bookID = Book::find($id);
+
+        return view('public.home_detalhes',['book' => $bookID]);
+    }
+
+    function getBookByIdHome(Request $request){
+        $bookID = Book::find($request->get('id'));
+
+        if($bookID == null){
+            return view('public.home_find');
+        }
+
+        return view('public.home_book',['book' => $bookID]);
+    }
+
+
 
     function insertBooks(Request $request){
 

@@ -68,7 +68,7 @@ class UsersController extends Controller
 
     function logout(){
         Auth::logout();
-        return view('auth.login');
+        return redirect()->to('');
     }
 
 }

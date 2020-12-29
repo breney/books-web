@@ -23,8 +23,16 @@ use Illuminate\Support\Facades\Route;
             @endif
 */
 
-Route::get('/', [UsersController::class, 'login'])->name("login");
-Route::post('/', [UsersController::class, 'checkLogin'])->name("checkLogin");
+Route::get('/',[BookController::class,'getBooksHome'])->name('books_home');
+Route::get('/detalhes/home/{id}',[BookController::class,'getBookDetailHome'])->name('detalhes');
+
+Route::get('/home_find',fn()=>view('public.home_find'))->name('home_find');
+Route::get('/home_book',[BookController::class,'getBookByIdHome'])->name('home_bookById');
+Route::get('/home_author',[AuthorController::class,'getAuthorByIdHome'])->name('home_authorById');
+
+
+Route::get('/login', [UsersController::class, 'login'])->name("login");
+Route::post('/login', [UsersController::class, 'checkLogin'])->name("checkLogin");
 
 Route::get('/logout', [UsersController::class, 'logout'])->name("logout");
 
